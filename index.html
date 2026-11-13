@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIZUNA – Find True Love</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video id="bg" muted playsinline autoplay></video>
+<div class="overlay"></div>
+
+<header>
+  <h1>KIZUNA</h1>
+  <div class="tag">A BOND THAT LASTS</div>
+</header>
+
+<section class="quote">
+  <small>TODAY'S QUOTE</small>
+  <p id="q"></p>
+</section>
+
+<form id="f" novalidate>
+  <div class="bar"><div id="fill"></div></div>
+  <p class="count" id="count"></p>
+
+  <div class="step"><h2>First, what's your name? 🌸</h2>
+    <input name="name" placeholder="Your full name" required></div>
+
+  <div class="step"><h2>Age</h2>
+    <input name="name" placeholder="Your Age" required>
+  </div>
+
+  <div class="step"><h2>Your email?</h2>
+    <p class="sub">Only for safety and to reach you.</p>
+    <input name="email" type="email" placeholder="you@example.com" required></div>
+
+  <div class="step"><h2>Your phone number?</h2>
+    <p class="sub">For safety verification.</p>
+    <input name="phone" type="tel" pattern="[0-9+\s-]{10,15}" placeholder="+91 32323 23232" required></div>
+    
+
+  <div class="step"><h2>What is love, according to you?</h2>
+    <textarea name="what_is_love" placeholder="Write from your heart..." required></textarea>
+  </div>
+
+  <div class="step"><h2>Why are you looking for love?</h2>
+    <textarea name="why_love" placeholder="Tell us your reason..." required></textarea>
+  </div>
+
+  <div class="step"><h2>What qualities do you want in your partner?</h2>
+    <textarea name="qualities" placeholder="Kind, loyal, honest..." required></textarea>
+  </div>
+
+  <div class="step"><h2>What are you looking for?</h2>
+    <select name="intent" required>
+      <option value="">-- choose --</option>
+      <option>True love & lifelong commitment</option>
+      <option>Serious relationship leading to marriage</option>
+      <option>Getting to know someone slowly, with serious intentions</option>
+    </select></div>
+
+  <div class="step"><h2>One last thing 💗</h2>
+    <label class="check"><input type="checkbox" required>
+      <span>I’m here for sincere, lasting love, and I promise to be honest and respectful.</span>
+    </label>
+    
+    <label class="check"><input type="checkbox" required>
+    <span>I agree my details are shared with the KIZUNA.</span>
+    </label>
+  </div>
+
+  <div class="nav">
+    <button type="button" id="back" class="ghost">← Back</button>
+    <button type="button" id="next">Next →</button>
+    <button type="submit" id="btn">Submit 💌</button>
+  </div>
+  <div id="msg"></div>
+</form>
+
+<div id="heartCursor">💗</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
